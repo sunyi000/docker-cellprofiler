@@ -37,7 +37,7 @@ RUN chmod +x /startapp.sh
 
 ENV APP_NAME="CellProfiler"
 
-
+ENV KEEP_APP_RUNNING=0
 ENV TAKE_CONFIG_OWNERSHIP=1
 
 
