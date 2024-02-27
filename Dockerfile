@@ -5,8 +5,6 @@ ENV TZ Europe/Berlin
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 RUN apt-get update -y && apt-get install -qqy build-essential 
 
-USER root
-
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y
 RUN apt install -y locales
 RUN locale-gen en_US
