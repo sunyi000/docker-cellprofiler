@@ -1,7 +1,8 @@
 #!/bin/sh -f
 
-# Calls the symlink under /bin
-if [ ! -e /bin/cellprofiler_galaxy ]; then    
+export PATH=${PATH}:$HOME/bin/
+
+if [ ! -e $HOME/bin/cellprofiler_galaxy ]; then    
     cellprofiler
 else    
     cellprofiler_galaxy
