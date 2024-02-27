@@ -5,8 +5,6 @@ ENV TZ Europe/Berlin
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 RUN apt-get update -y && apt-get install -qqy build-essential 
 
-USER root
-
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y
 RUN apt install -y locales
 RUN locale-gen en_US.UTF-8 && \
@@ -19,7 +17,6 @@ RUN apt-get clean
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 WORKDIR /tmp
-
 
 RUN wget https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04/wxPython-4.1.0-cp38-cp38-linux_x86_64.whl
 RUN pip3 install wxPython-4.1.0-cp38-cp38-linux_x86_64.whl
