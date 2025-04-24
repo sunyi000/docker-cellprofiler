@@ -43,5 +43,6 @@ ENV APP_NAME="CellProfiler"
 
 ENV TAKE_CONFIG_OWNERSHIP=1
 
+COPY rc.xml.template /opt/base/etc/openbox/rc.xml.template
 
 WORKDIR /config
