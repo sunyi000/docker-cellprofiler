@@ -530,7 +530,7 @@
   -->
   
   <!-- title="Cellprofiler 4.2.7" matches the main window -->
-  <application class="Cellprofiler" type="normal">
+  <application class="CelliProfiler" type="normal">
     <decor>yes</decor>
     <maximized>yes</maximized>
     <fullscreen>yes</fullscreen>
@@ -544,13 +544,13 @@
     <layer>above</layer>
   </application>
 
-  <application type="utility" class="Cellprofiler">
+  <application type="utility" class="CellProfiler">
     <decor>yes</decor>
     <maximized>no</maximized>
     <layer>above</layer>
   </application>
 
-  <application type="splash" class="Cellprofiler">
+  <application type="splash" class="CellProfiler">
     <decor>yes</decor>
     <maximized>no</maximized>
     <layer>above</layer>
