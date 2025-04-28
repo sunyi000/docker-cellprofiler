@@ -1,7 +1,7 @@
 #!/bin/sh -f
 
 if [ ! -e /bin/cellprofiler_galaxy ]; then    
-   cellprofiler
+   /opt/conda/envs/cellprofiler/bin/cellprofiler
 else    
    cellprofiler_galaxy
 fi
